@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.welcome {
+  min-width: 60%;
+  min-height: 60%;
+  border: 4px solid aqua;
+  background-color: transparent;
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.welcome h1 {
+  font-size: 50px;
+  color: aqua;
+}
+.welcome p {
+  font-size: 15px;
+  font-weight: bolder;
+  color: rgb(9, 90, 90);
+}
+.welcome .btn {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.welcome .btn .sing-up {
+  width: 6em;
+  height: 2.5em;
+  font-size: 15px;
+  font-weight: bolder;
+  border-radius: 10px;
+  color: aqua;
+  background-color: black;
+  border: 2px solid aqua;
+  transition: all 0.5s ease;
+}
+.welcome .btn .sing-up:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+.welcome .btn .Login {
+  width: 6em;
+  height: 2.5em;
+  font-size: 15px;
+  font-weight: bolder;
+  border-radius: 10px;
+  color: black;
+  background-color: aqua;
+  border: 2px solid aqua;
+  transition: all 0.5s ease;
+}
+.welcome .btn .Login:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.sing-Up {
+  width: 700px;
+  min-height: 100px;
+  border: 3px solid aqua;
+  border-radius: 20px;
+  padding: 20px 0;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.sing-Up h2 {
+  width: 100%;
+  height: 50px;
+  font-size: 40px;
+  color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sing-Up input {
+  width: 250px;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid rgb(6, 106, 106);
+  color: grey;
+  background-color: transparent;
+  padding: 0 5px;
+  font-size: 12px;
+}
+.sing-Up input::-moz-placeholder {
+  opacity: 0.3;
+  color: white;
+}
+.sing-Up input::placeholder {
+  opacity: 0.3;
+  color: white;
+}
+.sing-Up button {
+  width: 100px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: bolder;
+  border: 2px solid green;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+.sing-Up label {
+  font-size: 15px;
+  font-weight: bolder;
+  color: rgb(6, 106, 106);
+}
+.sing-Up .firstname-sing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.sing-Up .mail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.sing-Up .password {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.sing-Up .confirmPassword {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.sing-Up .btn-sing {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.sing-Up .btn-sing .save-sing {
+  background-color: black;
+  color: aqua;
+  border: 2px solid aqua;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.sing-Up .btn-sing .save-sing:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+.sing-Up .btn-sing .cancel-sing {
+  background-color: aqua;
+  color: black;
+  border: 2px solid aqua;
+  transition: all 0.5s ease;
+}
+.sing-Up .btn-sing .cancel-sing:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.login {
+  width: 700px;
+  min-height: 300px;
+  border: 3px solid aqua;
+  border-radius: 20px;
+  padding: 20px 0;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.login h2 {
+  width: 100%;
+  height: 50px;
+  font-size: 40px;
+  color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login input {
+  width: 250px;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid rgb(6, 106, 106);
+  color: grey;
+  background-color: transparent;
+  padding: 0 5px;
+  font-size: 12px;
+}
+.login input::-moz-placeholder {
+  opacity: 0.3;
+  color: white;
+}
+.login input::placeholder {
+  opacity: 0.3;
+  color: white;
+}
+.login button {
+  width: 100px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: bolder;
+  border: 2px solid green;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+.login .btn-log {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.login .btn-log .save-log {
+  background-color: black;
+  color: aqua;
+  border: 2px solid aqua;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.login .btn-log .save-log:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+.login .btn-log .cancel-log {
+  background-color: aqua;
+  color: black;
+  border: 2px solid aqua;
+  transition: all 0.5s ease;
+}
+.login .btn-log .cancel-log:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+.login label {
+  font-size: 15px;
+  font-weight: bolder;
+  color: rgb(6, 106, 106);
+}
+.login .firstname {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.login .password-log {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}/*# sourceMappingURL=style.css.map */
